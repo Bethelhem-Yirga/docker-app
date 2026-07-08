@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: #282c34;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.status {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.online { color: #4caf50; }
+.offline { color: #f44336; }
+
+.buttons button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #61dafb;
+  color: #282c34;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttons button:hover:not(:disabled) {
+  background: #4fa8c7;
+  transform: scale(1.05);
+}
+
+.buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message-box {
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  min-width: 300px;
+  min-height: 50px;
+}
+
+.users-list {
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.users-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.users-list li {
+  padding: 8px;
+  margin: 4px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
